@@ -3,14 +3,14 @@
 #
 
 # Pull base image.
-FROM ubuntu:16.04
+FROM aarch64/ubuntu:16.04
 
 # Install.
 RUN \
   apt-get clean && \
   apt-get update && \
   apt-get -y upgrade && \
-  apt-get install -y git python python-pip && \
+  apt-get install -y git python python-pip libjpeg-dev zlib1g-dev && \
   rm -rf /var/lib/apt/lists/*
 
 # Add files.
