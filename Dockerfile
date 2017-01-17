@@ -10,7 +10,7 @@ RUN \
   apt-get clean && \
   apt-get update && \
   apt-get -y upgrade && \
-  apt-get install -y git python python-pip libjpeg-dev zlib1g-dev && \
+  apt-get install -y git python python-pip libpq-dev libjpeg-dev zlib1g-dev && \
   rm -rf /var/lib/apt/lists/*
 
 # Add files.
